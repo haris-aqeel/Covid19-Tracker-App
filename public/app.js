@@ -9,19 +9,14 @@ async function handleSearch() {
     const country_names = jsdata.Countries;
     country_names.forEach(element => {
         if (element.Country==putValue){
-            console.log(element);
             insertStats(element);
             return null;
         
-        }else{
-            alert('Enter A Valid Country name!')
         }
-        
     }); 
 }
 
 function insertStats(details){
-    console.log(details)
     var patient = document.getElementById('patient');
     var death = document.getElementById('death');
     var recovered = document.getElementById('recovered');
